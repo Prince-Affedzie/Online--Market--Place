@@ -1,0 +1,35 @@
+/* StoresPage.css */
+.stores-page {
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .stores-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .store-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+  }
+  
+  .add-store-btn {
+    margin-top: 20px;
+    padding: 10px 0px;
+    width:100px;
+    background-color: #27AE60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-store-btn:hover {
+    background-color: #219653;
+  }
+  

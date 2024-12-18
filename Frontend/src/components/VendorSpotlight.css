@@ -1,0 +1,150 @@
+.vendor-spotlight-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff; /* Subtle background for contrast */
+  border-radius: 1px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1); /* Slight elevation */
+  margin-bottom: 20px;
+}
+
+.vendor-spotlight-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.vendor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust grid based on available space */
+  gap: 20px;
+}
+
+.vendor-card {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+  transition: all 0.3s ease-in-out;
+}
+
+.vendor-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+}
+
+.vendor-logo {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  background-color: #f1f1f1;
+}
+
+.vendor-info {
+  padding: 15px 10px;
+}
+
+.vendor-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.vendor-rating {
+  font-size: 16px;
+  color: #e67e22;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .vendor-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Tighter grid for smaller screens */
+  }
+
+  .vendor-card {
+    padding: 10px;
+  }
+
+  .vendor-logo {
+    height: 100px;
+  }
+
+  .vendor-name {
+    font-size: 14px;
+  }
+
+  .vendor-rating {
+    font-size: 12px;
+  }
+}
+
+/* Tablet Responsiveness */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .vendor-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Balanced grid for tablets */
+  }
+}
+
+.vendor-spotlight-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px; /* Larger, bolder size */
+  font-weight: 700; /* Extra bold */
+  color: #fff; /* Neutral, dark color */
+  text-transform: uppercase; /* Emphasize the title */
+  letter-spacing: 2px; /* Add spacing for a modern look */
+  position: relative; /* Needed for decorative elements */
+  padding: 0 20px;
+}
+
+.vendor-spotlight-container h2:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient under the text */
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.vendor-spotlight-container h2 span {
+  display: inline-block;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient text */
+  -webkit-background-clip: text; /* Clip gradient to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent to reveal gradient */
+}
+
+.vendor-spotlight-container h2:after {
+  content: '✨'; /* Add a decorative icon */
+  display: inline-block;
+  margin-left: 10px;
+  animation: sparkle 1.5s infinite ease-in-out; /* Sparkling effect */
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+}
+.category-title-v{
+  background-color:#FFA500;
+  width: 75rem;
+  height: 2rem;
+  margin-right: 20%;
+  border-radius: 0.5rem;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}

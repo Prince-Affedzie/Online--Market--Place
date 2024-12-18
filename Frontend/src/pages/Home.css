@@ -1,0 +1,293 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFA500;
+  width: 100%;
+}
+
+/* Hero section */
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 20rem;
+  padding: 2rem;
+  background: linear-gradient(to right, #FFA500, #feb47b);
+  background-image: url('../assets/GH_Slider_GEN_OS_D.png');
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Ensures hero section isn't overlapped */
+  animation: slideshow 15s infinite; /* Control the time it takes to complete one cycle */
+ 
+}
+@keyframes slideshow {
+  0% {
+    background-image: url('../assets/GH_Slider_GEN_OS_D.png');
+  }
+ 
+  33% {
+    background-image: url('../assets/GH_WK49_HS_Slider_Holiday_Sales_GEN_d.jpg'); /* Second image */
+  }
+  66% {
+    background-image: url('../assets/GH_Slider_OS_Beauty_d.png'); /* Third image */
+  }
+  88% {
+    background-image: url('../assets/GH_WK49_HS_Slider_Nivea_d.jpg'); /* Third image */
+  }
+  100% {
+    background-image: url('../assets/GH_Slider_GEN_OS_D.png'); /* Back to first image */
+  }
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background: #FFA500;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background: #e26b4d;
+}
+
+/* Main container */
+.container-h {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  gap: 2rem; /* Space between sidebar and hero section */
+  margin: 0 auto;
+  margin-right: 24%;
+  max-width: 1000px;
+  
+  
+}
+
+/* Sidebar */
+.sidebar-h {
+  flex: 1 1 250px; /* Sidebar takes up a default of 250px */
+  max-width: 300px; /* Prevents it from growing too large */
+  background-color: #f5f5f5;
+  padding: 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative; /* Ensure it stays within normal document flow */
+  z-index: 1;
+}
+
+/* Main content */
+.main-content-h {
+  flex: 1; /* Main content takes up remaining space */
+  padding: 1rem;
+  background:beige;
+  max-width: 1300px;
+  z-index: 1;
+}
+
+/* Category section */
+.category-section-h {
+  margin: 1.5rem 0; /* Vertical spacing between categories */
+  padding: 1rem; /* Inner spacing to give content breathing room */
+  border: 1px solid #333; /* Light border for separation */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  background-color: #fff; /* Subtle background color to distinguish sections */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+}
+
+.category-header-h {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  border-radius: 8px; /* Rounded corners for a softer look */
+  background-color: #2D9CDB; /* Subtle background color to distinguish sections */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
+}
+
+.category-title-h {
+  margin-left: 2rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.products-grid-h {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  margin-bottom: 10%;
+}
+
+.product-card-h {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  background: #fff;
+}
+
+.product-image-h {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-title-h {
+  font-size: 0.9rem;
+  color:black;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; 
+  margin: 0.5rem 0;
+}
+
+.product-original-price-h {
+  text-decoration: line-through;
+  color: grey;
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+.product-discounted-price-h {
+  font-weight: bold;
+  color: green;
+}
+
+.product-discount-percentage-h {
+  color: red;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+
+.product-price-h {
+  color: #ff7e5f;
+  font-weight: bold;
+}
+.discount-badge-h {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1; /* Ensures it stays above other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .container-h {
+    flex-direction: column;
+  }
+
+  .sidebar-h {
+    max-width: 100%;
+    margin: 0 0 1rem;
+  }
+}
+.products-grid-h, .vendor-grid {
+  scrollbar-width: thin;
+  scrollbar-color: #ff7e5f #f1f1f1;
+}
+
+.products-grid-h::-webkit-scrollbar,
+.vendor-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.products-grid-h::-webkit-scrollbar-thumb,
+.vendor-grid::-webkit-scrollbar-thumb {
+  background-color: #ff7e5f;
+  border-radius: 10px;
+}
+
+.products-grid-h::-webkit-scrollbar-track,
+.vendor-grid::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Link Container */
+.category-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between text and arrow */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ff5722; /* Vibrant color for better visibility */
+  padding: 0.5rem 1rem;
+  border: 2px solid #ff5722; /* Border to make it stand out */
+  border-radius: 25px;
+  background-color: #fff; /* Ensure it contrasts with the background */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Hover and Focus Effects */
+.category-link:hover,
+.category-link:focus {
+  background-color: #ff5722; /* Fill the link with color */
+  color: #fff; /* Text changes to white for contrast */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Elevation effect */
+}
+
+.category-link:hover .arrow-icon,
+.category-link:focus .arrow-icon {
+  transform: translateX(5px); /* Arrow slides slightly */
+}
+
+/* Arrow Icon Styling */
+.arrow-icon {
+  display: inline-block;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .category-link {
+    font-size: 0.9rem; /* Slightly smaller font for smaller screens */
+    padding: 0.4rem 0.8rem; /* Adjust padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .category-link {
+    font-size: 0.8rem; /* Further reduce font size */
+    padding: 0.3rem 0.6rem; /* Compact padding */
+  }
+}
+.see-all{
+  color: black;
+}
+.see-all:hover{
+  color: #fff;
+}

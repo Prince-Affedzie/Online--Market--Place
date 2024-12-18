@@ -1,0 +1,146 @@
+/* src/pages/SellerProductManagement.css */
+.products-management {
+  padding: 20px;
+  max-width: 1500px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-product-btn {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-product-btn:hover {
+  background-color: #219653;
+}
+
+.product-list-m {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.product-card-m {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  background: #fff;
+  
+}
+.product-title-m {
+  font-size: 0.9rem;
+  color:black;
+  font-weight: bold;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; 
+  margin: 0.5rem 0;
+}
+
+.product-price-m {
+  color: #ff7e5f;
+  font-weight: bold;
+}
+
+.product-image-m {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.product-card h3 {
+  font-size: 18px;
+    color: #333;
+   font-weight: 500;
+  margin: 15px 0;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; 
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-m {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.edit-btn, .delete-btn {
+  padding: 8px 20px;
+  margin: 5px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-btn {
+  background-color: #3498db;
+  padding: 5px;
+  width: 200px;
+}
+
+.edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.delete-btn {
+  background-color:#2980b9;
+  padding: 5px;
+  width: 200px;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make it full screen */
+}
+
+.spinner {
+  border: 6px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #ff6600; /* Customize color */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

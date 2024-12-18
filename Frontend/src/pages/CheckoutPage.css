@@ -1,0 +1,119 @@
+.checkout-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+   
+  }
+  
+  .checkout-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+  
+  .order-summary,
+  .shipping-details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .order-item {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .order-total {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .payment-method {
+    margin-top: 30px;
+    display:block;
+    width: 40%;
+    background-color: #f9f9f9;
+  }
+
+  
+  .payment-options {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .payment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 100px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .payment-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-card span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .payment-card.selected {
+    border-color: #007bff;
+  }
+  
+  .payment-card:hover {
+    border-color: #007bff;
+  }
+  
+  
+  .place-order-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .place-order-btn:hover {
+    background-color: #0056b3;
+  }
+  

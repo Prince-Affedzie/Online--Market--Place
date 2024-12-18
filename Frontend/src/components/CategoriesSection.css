@@ -1,0 +1,98 @@
+/* src/components/CategoriesSection.css */
+
+.categories-section {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  justify-content: space-between;
+}
+
+.category-card {
+  width: 120px; /* Adjust width to fit content */
+  height: auto; /* Allow height to adjust based on content */
+ /* position: relative;*/
+  padding: 10px; /* Increase padding to avoid content clipping */
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Align text to the center */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+  /*overflow: hidden; /* Prevent text from overflowing */
+}
+.category-link-c{
+  text-decoration: none;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Add ellipsis for truncated text */
+}
+
+.category-card p:hover {
+  color: #007bff;
+}
+
+/* Subcategory styling */
+.subcategory-list {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: none;
+  position: absolute; /* Use absolute positioning to align with the card */
+  top: 0;
+  left: 10%; /* Align to the right of the category card */
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  min-width: 200px;
+  z-index: 9999; /* Ensures it overlays other content */
+}
+
+.subcategory-list li {
+  padding: 5px 0;
+  font-size: 0.9rem;
+  
+}
+
+.subcategory-list li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.subcategory-list li a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Show subcategories on hover */
+.category-card:hover .subcategory-list {
+  display: block;
+}
+
+/* Adjust hover effect for category card */
+.category-card:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+.subcategory-wrapper {
+  position: absolute;
+  top: 100%; /* Start below the category card */
+  left: 0; /* Align with the left edge of the category card */
+  min-width: 200px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
+
+
+

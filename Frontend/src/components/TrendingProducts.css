@@ -1,0 +1,118 @@
+.trending-products-carousel {
+  padding: 15px;
+  background-color: #f7f9fc;
+  border-radius: 10px;
+  max-width: 1300px;
+  margin: 20px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.trending-products-carousel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px; /* Slightly smaller */
+  color: #222;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+.trending-products-carousel h2:after {
+  content: '';
+  display: block;
+  width: 50px; /* Reduced width */
+  height: 2px; /* Reduced height */
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  margin: 6px auto 0;
+}
+
+.carousel-item {
+  text-align: center;
+  background-color: white;
+  border-radius: 10px; /* Slightly smaller radius */
+  padding: 10px; /* Reduced padding */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.carousel-product-image {
+  width: 75%; /* Reduced width */
+  height: 170px; /* Reduced height */
+  object-fit: cover;
+  border-radius: 6px; /* Slightly smaller radius */
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.carousel-product-title {
+  font-size: 16px; /* Reduced size */
+  font-weight: 600;
+  color: #333;
+  margin: 8px 0; /* Reduced margin */
+}
+
+.carousel-product-price {
+  font-size: 14px; /* Reduced size */
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+.slick-dots li button:before {
+  font-size: 10px; /* Reduced dot size */
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .carousel-product-image {
+    height: 120px; /* Adjusted for tablets */
+  }
+
+  .carousel-product-title {
+    font-size: 14px;
+  }
+
+  .carousel-product-price {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trending-products-carousel {
+    padding: 10px;
+  }
+  .carousel-item {
+    padding: 8px; /* Reduce padding */
+    text-align: center;
+    object-fit: cover;
+   
+  }
+
+  .carousel-product-image {
+    height: 10%;
+    width:  30%;
+    align-self: center;
+   
+    /* Adjusted for smaller screens */
+  }
+
+  .carousel-product-title {
+    font-size: 10px;
+  }
+
+  .carousel-product-price {
+    font-size: 8px;
+  }
+  
+}
+
+.slick-prev, .slick-next{
+  font-size: 15px;
+  line-height: 5px;
+  background: #000000ba;
+ 
+}

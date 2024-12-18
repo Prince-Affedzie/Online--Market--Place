@@ -1,0 +1,131 @@
+.products-grid-s {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .product-card-s {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width:200px;
+    padding: 10px;
+    text-align: center;
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card-s:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image-s {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .product-title-s {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .product-price-s {
+    color: #ff7e5f;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+  }
+  
+  .filters input {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .filters select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 1024px) {
+    .products-grid-s {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .filters {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .products-grid-s {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  
+    .product-card-s {
+      padding: 8px;
+    }
+  
+    .product-image-s {
+      height: 120px;
+    }
+  
+    .product-title-s {
+      font-size: 0.9rem;
+    }
+  
+    .product-price-s {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .products-grid-s {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 0.5rem;
+    }
+  
+    .product-card-s {
+      padding: 5px;
+    }
+  
+    .product-image-s {
+      height: 100px;
+    }
+  
+    .product-title-s {
+      font-size: 0.8rem;
+    }
+  
+    .product-price-s {
+      font-size: 0.7rem;
+    }
+  
+    .filters {
+      gap: 0.5rem;
+      margin: 0.5rem;
+    }
+  }
+  

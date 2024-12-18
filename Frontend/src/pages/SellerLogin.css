@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+  }
+  
+  /* Seller Login Page Styles */
+  .seller-login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .login-container {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .login-left,
+  .login-right {
+    flex: 1;
+    padding: 60px 40px;
+  }
+  
+  .login-left {
+    background-color: #2d9cdb;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-left .logo {
+    width: 150px;
+    margin-bottom: 30px;
+  }
+  
+  .login-left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .login-left p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .login-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .login-right h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #2d9cdb;
+  }
+  
+  .input-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    background-color: #2d9cdb;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #238ac9;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .signup-text {
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+  }
+  
+  .signup-link {
+    color: #2d9cdb;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .login-left {
+      padding: 40px 30px;
+    }
+  
+    .login-right {
+      padding: 40px 30px;
+    }
+  }
+  
